@@ -1,6 +1,6 @@
 Page({
   data: {
-    city: '南昌',
+    city: "南昌",
     imageUrl: [
       'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
       'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
@@ -9,13 +9,13 @@ Page({
     items: []
   },
   onLoad() {
-    var that = this
+    let that = this
     wx.request({
-      url: 'https://www.easy-mock.com/mock/5cbeb43b3c65af2ab66ab0fc/',
+      url: "https://www.easy-mock.com/mock/5cbeb473d2955f5e587f936d/",
       data: {},
       method: 'GET',
-      header: { 'Content-Type': 'application/json' },
-      success: function (res) {
+      header: {'Content-type': 'application/json'},
+      success: function(res) {
         console.log(res)
         that.setData({
           items: res.data.data.movieList

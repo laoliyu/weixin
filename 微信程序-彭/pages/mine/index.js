@@ -5,11 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-   people:[
-     {name:'猛哥'},
-     {name:'俞导'},
-     {name:'帅哥'}
-   ]
+    people: [
+      { name: '猛哥', age: 18},
+      { name: '遇到'},
+      { name: '小哥'},
+      { name: '猛哥'}
+    ]
   },
 
   /**
